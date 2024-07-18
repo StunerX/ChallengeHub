@@ -11,6 +11,6 @@ public class Palindrome
     /// <returns></returns>
     public static bool IsPalindrome(string str)
     {
-        Dictionary<char, string> = new Dictionary<char, string>();
+        return false;
     }
 }

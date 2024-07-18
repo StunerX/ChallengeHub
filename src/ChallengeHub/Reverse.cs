@@ -10,6 +10,13 @@ public class Reverse
     /// <returns></returns>
     public static int[] Array(int[] array)
     {
-        throw new NotImplementedException();
+        int[] reverseInt = new int[array.Length];
+        int z = 0;
+        for (int i = array.Length - 1; i >= 0; i--)
+        {
+            reverseInt[z++] = array[i];
+        }
+        return reverseInt;
     }
 }
+
