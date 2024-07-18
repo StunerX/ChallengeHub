@@ -1,5 +1,3 @@
-namespace ChallengeHub;
-
 public class Fibonacci
 {
     /// <summary>
@@ -13,6 +11,24 @@ public class Fibonacci
     /// <returns></returns>
     public static int GetFibonacci(int n)
     {
-        throw new NotImplementedException();
+        if (n == 0 || n == 1)
+        {
+            return n;
+        }
+        else
+        {
+            int x = 0;
+            int v = 1;
+
+            for (int i = 1; i < n; i++)
+            {
+                int t = x + v;
+
+                x = v;
+                v = t;
+            }
+
+            return v;
+        }
     }
 }
