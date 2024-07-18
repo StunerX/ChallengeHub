@@ -10,6 +10,17 @@ public class FindMax
     /// <returns></returns>
     public static int Find(int[] array)
     {
-        throw new NotImplementedException();
+        int valorMaximo = int.MinValue;
+
+
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i] > valorMaximo)
+            {
+                valorMaximo = array[i];
+            }
+        }
+
+        return valorMaximo;
     }
 }
