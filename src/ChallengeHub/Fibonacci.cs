@@ -31,4 +31,9 @@ public class Fibonacci
             return v;
         }
     }
+
+    public static int GetFibonacciLine(int n)
+    {
+        return n < 2 ? n : GetFibonacci(n - 1) + GetFibonacci(n - 2);
+    }
 }
